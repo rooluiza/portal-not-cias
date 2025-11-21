@@ -141,7 +141,7 @@ $insert->execute([
     ':content' => $content,
     ':image'   => $imageName
 ]);
-``
+```
 ---
 
 ### 🔹 4. Exibir notícias na página inicial – *index.php*
