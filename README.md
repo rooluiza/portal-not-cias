@@ -1,31 +1,31 @@
-#  Portal de Notícias – PHP, Bootstrap e SQLite
+#  Portal de Noticias – PHP, Bootstrap e SQLite
 
-Este projeto é um **Portal de Notícias moderno**, criado como trabalho acadêmico para demonstrar o uso de tecnologias web (PHP, HTML, CSS, JavaScript e Bootstrap) integradas a um banco de dados SQLite.  
+Este projeto é um **Portal de Noticias moderno**, criado como trabalho acadêmico para demonstrar o uso de tecnologias web (PHP, HTML, CSS, JavaScript e Bootstrap) integradas a um banco de dados SQLite.  
 O sistema permite cadastrar, editar, excluir e exibir notícias em um layout escuro moderno e responsivo.
 
 ---
 
 ##  Funcionalidades
 
-###  **Área Pública**
-- Exibição de notícias
-- Notícia em destaque (hero)
+###  **Area Publica**
+- Exibição de noticias
+- Noticia em destaque (hero)
 - Cards modernos
 - Busca por palavra-chave
-- Página individual da notícia
+- Pagina individual da noticia
 
 ###  **Painel Administrativo**
 - Login e logout
 - Cadastro de notícias
 - Edição de notícias
-- Exclusão de notícias
+- Exclusao de noticias
 - Upload de imagens
 
 ###  **Design Moderno**
 - Tema escuro (dark mode)
 - Layout responsivo com Bootstrap 5
 - Tipografia Inter
-- Animações leves e hover effects
+- Animaçoes leves e hover effects
 
 ---
 
@@ -94,7 +94,7 @@ Depois, você pode excluir o arquivo `setup.php` por segurança.
 
 ---
 
-##  Acadêmico(a)
+##  Academico
 **Roberta Luiza da Silva Moreira**
 
 ##  Tutor Externo
