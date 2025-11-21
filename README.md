@@ -19,7 +19,6 @@ O sistema permite cadastrar, editar, excluir e exibir notícias em um layout esc
 - Cadastro de noticias
 - Edição de noticias
 - Exclusao de noticias
-- Carregar imagens
 
 ###  **Design Moderno**
 - Tema escuro (dark mode)
