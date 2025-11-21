@@ -169,8 +169,8 @@ if ($search != "") {
 }
 
 $news = $stmt->fetchAll(PDO::FETCH_ASSOC);
-´´´
 
+```
 ---
 
 ##  Academico
