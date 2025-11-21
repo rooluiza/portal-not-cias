@@ -110,11 +110,12 @@ function getPDO() {
 }
 
 session_start();
-
+```
 ---
 
 ### 🔹 2. Login com senha criptografada – *login.php*
 
+```php
 $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :u");
 $stmt->execute([':u' => $username]);
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -123,11 +124,12 @@ if ($user && password_verify($password, $user['password'])) {
     $_SESSION['user'] = $user;
     header("Location: admin.php");
 }
-
+```
 ---
 
 ### 🔹 3. Inserção de uma Notícia – *add.php*
 
+```php
 $insert = $pdo->prepare(
     "INSERT INTO news (title, summary, content, image) 
      VALUES (:title, :summary, :content, :image)"
@@ -139,11 +141,12 @@ $insert->execute([
     ':content' => $content,
     ':image'   => $imageName
 ]);
-
+``
 ---
 
 ### 🔹 4. Exibir notícias na página inicial – *index.php*
 
+```php
 if ($search != "") {
     $stmt = $pdo->prepare("SELECT * FROM news 
                            WHERE title LIKE :s OR summary LIKE :s
@@ -154,11 +157,12 @@ if ($search != "") {
 }
 
 $news = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+```
 ---
 
 ### 🔹 5. Estrutura das Tabelas (SQLite) – *setup.php*
 
+```php
 if ($search != "") {
     $stmt = $pdo->prepare("SELECT * FROM news 
                            WHERE title LIKE :s OR summary LIKE :s
