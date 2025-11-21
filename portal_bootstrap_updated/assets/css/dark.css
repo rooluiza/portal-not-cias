@@ -1,0 +1,105 @@
+
+/* Modern Dark Theme Overrides */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root{
+  --bg:#0b0f14;
+  --card:#0f1720;
+  --muted:#9aa4b2;
+  --accent:#00d1ff;
+  --glass: rgba(255,255,255,0.03);
+}
+
+body{
+  background: linear-gradient(180deg, var(--bg) 0%, #07101a 100%);
+  color: #e6eef6;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.navbar{
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.navbar .navbar-brand{
+  font-weight:700;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+.btn-primary{
+  background: linear-gradient(90deg, var(--accent), #6ee7b7);
+  border: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.03);
+  transition: transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s;
+  color: #e6eef6;
+}
+
+/* card hover effect */
+.card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(2,6,23,0.7);
+}
+
+/* featured hero */
+.hero{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  padding:1.6rem;
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:10px;
+  margin-bottom:1.5rem;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.hero .hero-img{
+  width:48%;
+  max-height:320px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.hero .hero-body{
+  width:52%;
+}
+
+.card-title{
+  color: #ffffff;
+  font-weight:700;
+}
+
+/* small muted text */
+.text-muted{
+  color: var(--muted) !important;
+}
+
+/* inputs */
+.form-control, .form-select{
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+  color: #e6eef6;
+}
+
+/* footer */
+.site-footer{
+  margin-top:3rem;
+  padding:2rem 0;
+  color:var(--muted);
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,0.03);
+}
+
+/* responsive adjustments */
+@media (max-width: 768px){
+  .hero{flex-direction:column;}
+  .hero .hero-img, .hero .hero-body{width:100%;}
+}
