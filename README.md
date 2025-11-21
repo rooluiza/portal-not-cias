@@ -111,6 +111,8 @@ function getPDO() {
 
 session_start();
 
+---
+
 ### 🔹 2. Login com senha criptografada – *login.php*
 
 $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :u");
@@ -121,6 +123,8 @@ if ($user && password_verify($password, $user['password'])) {
     $_SESSION['user'] = $user;
     header("Location: admin.php");
 }
+
+---
 
 ### 🔹 3. Inserção de uma Notícia – *add.php*
 
@@ -136,6 +140,8 @@ $insert->execute([
     ':image'   => $imageName
 ]);
 
+---
+
 ### 🔹 4. Exibir notícias na página inicial – *index.php*
 
 if ($search != "") {
@@ -148,6 +154,8 @@ if ($search != "") {
 }
 
 $news = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+---
 
 ### 🔹 5. Estrutura das Tabelas (SQLite) – *setup.php*
 
