@@ -16,8 +16,8 @@ O sistema permite cadastrar, editar, excluir e exibir notícias em um layout esc
 
 ###  **Painel Administrativo**
 - Login e logout
-- Cadastro de notícias
-- Edição de notícias
+- Cadastro de noticias
+- Edição de noticias
 - Exclusao de noticias
 - Upload de imagens
 
@@ -86,8 +86,8 @@ Isso cria automaticamente:
 - o banco `news.db`  
 - o usuário administrador
 
-###  Credenciais padrão:
-**Usuário:** admin  
+###  Credenciais padrao:
+**Usuario:** admin  
 **Senha:** admin123  
 
 Depois, você pode excluir o arquivo `setup.php` por segurança.
@@ -102,26 +102,26 @@ Depois, você pode excluir o arquivo `setup.php` por segurança.
 
 ---
 
-##  Sobre o Projeto Acadêmico
+##  Sobre o Projeto Academico
 
-Este repositório faz parte do trabalho acadêmico do curso da UNIASSELVI, demonstrando:
+Este repositorio faz parte do trabalho academico do curso da UNIASSELVI, demonstrando:
 
 - desenvolvimento de um sistema real em PHP  
-- uso de banco de dados para persistência  
-- criação de interface responsiva  
-- aplicação de CRUD completo  
-- uso de GitHub como portfólio e entrega técnica  
+- uso de banco de dados para persistencia  
+- criaçeo de interface responsiva  
+- aplicaçao de CRUD completo  
+- uso de GitHub como portfolio e entrega tecnica  
 
 ---
 
-## Contribuições
+## Contribuiçoes
 Este projeto pode ser expandido com:
 - categorias de notícias  
-- sistema de comentários  
+- sistema de comentarios  
 - API REST  
-- tema claro/escuro automático  
+- tema claro/escuro automatico  
 
-Sinta-se à vontade para evoluir o projeto!
+Sinta-se a vontade para evoluir o projeto!
 
 
 
